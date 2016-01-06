@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<style>
+body{margin:0px; padding:0px;}
+
+.intro{
+	height:150px;
+	width:100%;
+	background-color:pink;
+	}
+	
+.footer{
+	height:1000px;
+	width:100%;
+	background-color:violet;
+	}
+	
+.videowindow{
+	height:500px;
+	width:100px;
+	}
+
+
+#video1 { 
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;  
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; */
+}
+</style>
+</head>
+<body> 
+ <video id="video1" width="420" autoplay muted>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+<section class="intro"></section>
+
+<section class="videowindow">
+ 
+</section>
+
+<section class="footer"></section>
+  
+
+
+<script> 
+var myVideo = document.getElementById("video1");
+myVideo.loop = true;
+</script> 
+</body> 
+</html>

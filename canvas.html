@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+canvas {
+  border: solid 1px #000;
+}
+</style>
+
+</head>
+<body>
+
+<canvas id="exampleCanvas" width="800" height="500">
+   <!-- OPTION 1: leave a message here if browser doesn't support canvas -->
+          Your browser doesn’t currently support HTML5 Canvas. Please check caniuse.com/#feat=canvas for information on browser support for canvas. 
+</canvas>
+
+<script>
+var canvas = document.getElementById('exampleCanvas'),
+    context = canvas.getContext('2d');
+
+context.beginPath();
+context.moveTo(0, 0);
+context.lineTo(400, 250);
+context.stroke();
+
+
+context.beginPath();
+context.moveTo(800, 0);
+context.lineTo(400, 250);
+context.stroke();
+
+context.beginPath();
+context.moveTo(0, 500);
+context.lineTo(400, 250);
+context.stroke();
+
+context.beginPath();
+context.moveTo(800, 500);
+context.lineTo(400, 250);
+context.stroke();
+
+context.font = 'italic 40pt Calibri, sans-serif';
+context.fillText('Hello World!', 280, 50);
+</script>
+
+</body>
+</html>
